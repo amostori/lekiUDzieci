@@ -12,17 +12,17 @@ import '../screens/tips/defibrilation.dart';
 import '../screens/weightScreen.dart';
 
 class NameAndValue {
-  final String name;
-  final String value;
-  final int index;
+  final String? name;
+  final String? value;
+  final int? index;
   NameAndValue({this.name, this.value, this.index});
 }
 
 class DrugsCard extends StatefulWidget {
-  final List<String> names;
-  final List<String> values;
-  final String wiek;
-  final String title;
+  final List<String>? names;
+  final List<String>? values;
+  final String? wiek;
+  final String? title;
 
   DrugsCard({this.names, this.values, this.wiek, this.title});
   @override
@@ -30,48 +30,48 @@ class DrugsCard extends StatefulWidget {
 }
 
 class _DrugsCardState extends State<DrugsCard> {
-  List<String> names = List();
-  List<String> values = List();
-  List<NameAndValue> nameAndValueList = List();
-  List<NameAndValue> filteredNameAndValueList = List();
+  List<String>? names = [];
+  List<String>? values = [];
+  List<NameAndValue> nameAndValueList = [];
+  List<NameAndValue> filteredNameAndValueList = [];
 
   void goToDetails(
-      {BuildContext context, String wiek, String title, int index}) {
+      {BuildContext? context, String? wiek, String? title, int? index}) {
     switch (index) {
       case 0:
-        Navigator.pushNamed(context, WeightScreen.id,
+        Navigator.pushNamed(context!, WeightScreen.id,
             arguments: {'wiek': wiek, 'title': title});
         break;
       case 1:
-        Navigator.pushNamed(context, PressureScreen.id);
+        Navigator.pushNamed(context!, PressureScreen.id);
         break;
       case 2:
-        Navigator.pushNamed(context, BreathingScreen.id);
+        Navigator.pushNamed(context!, BreathingScreen.id);
         break;
       case 3:
-        Navigator.pushNamed(context, PulseScreen.id);
+        Navigator.pushNamed(context!, PulseScreen.id);
         break;
       case 4:
-        Navigator.pushNamed(context, GlukozeScreen.id);
+        Navigator.pushNamed(context!, GlukozeScreen.id);
         break;
       case 5:
-        Navigator.pushNamed(context, IntubacjaScreen.id);
+        Navigator.pushNamed(context!, IntubacjaScreen.id);
         break;
       case 6:
-        Navigator.pushNamed(context, BladeScreen.id);
+        Navigator.pushNamed(context!, BladeScreen.id);
         break;
       case 7:
-        Navigator.pushNamed(context, MaskaScreen.id);
+        Navigator.pushNamed(context!, MaskaScreen.id);
         break;
       case 8:
-        Navigator.pushNamed(context, Defibrilation.id);
+        Navigator.pushNamed(context!, Defibrilation.id);
         break;
       case 9:
-        Navigator.pushNamed(context, KardioversionScreen.id);
+        Navigator.pushNamed(context!, KardioversionScreen.id);
         break;
       case 10:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Adenozyna',
@@ -80,7 +80,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 11:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Adrenalina',
@@ -89,7 +89,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 12:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Adrenalina',
@@ -98,7 +98,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 13:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Adrenalina',
@@ -107,7 +107,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 14:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Amiodaron',
@@ -116,7 +116,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 15:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Atropina',
@@ -125,7 +125,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 16:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Deksametazon',
@@ -134,7 +134,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 17:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Fentanyl',
@@ -143,7 +143,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 18:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Furosemid',
@@ -152,7 +152,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 19:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Glukagon',
@@ -161,7 +161,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 20:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Glukoza',
@@ -170,7 +170,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 21:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Hydrokortyzon',
@@ -179,7 +179,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 22:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Ibuprofen',
@@ -188,7 +188,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 23:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Ketonal',
@@ -197,7 +197,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 24:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Klemastin',
@@ -206,7 +206,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 25:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Klonazepam',
@@ -215,7 +215,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 26:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Magnez',
@@ -224,7 +224,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 27:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Midazolam',
@@ -233,7 +233,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 28:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Morfina',
@@ -242,7 +242,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 29:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'NaHCO3',
@@ -251,7 +251,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 30:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Nalokson',
@@ -260,7 +260,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 31:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Paracetamol',
@@ -269,7 +269,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 32:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Paracetamol',
@@ -278,7 +278,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 33:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Relanium - Diazepam',
@@ -287,7 +287,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 34:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Relanium - Diazepam',
@@ -296,7 +296,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 35:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'Salbutamol',
@@ -305,7 +305,7 @@ class _DrugsCardState extends State<DrugsCard> {
         break;
       case 36:
         Navigator.pushNamed(
-          context,
+          context!,
           DrugDetailsScreen.id,
           arguments: {
             'drugName': 'NaCl 0,9%',
@@ -316,7 +316,7 @@ class _DrugsCardState extends State<DrugsCard> {
   }
 
   Widget _drugsCardItem(BuildContext context, int index) {
-    Color kolor;
+    Color? kolor;
     if (index < 10) {
       kolor = Colors.white;
     } else if (index == 10) {
@@ -327,8 +327,8 @@ class _DrugsCardState extends State<DrugsCard> {
       kolor = Color(0xFFFFCDD2);
     }
 
-    String wiek = widget.wiek;
-    String title = widget.title;
+    String? wiek = widget.wiek;
+    String? title = widget.title;
     return InkWell(
       onTap: () => goToDetails(
           context: context,
@@ -343,14 +343,14 @@ class _DrugsCardState extends State<DrugsCard> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                filteredNameAndValueList[index].name,
+                filteredNameAndValueList[index].name!,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                filteredNameAndValueList[index].value,
+                filteredNameAndValueList[index].value!,
                 style: TextStyle(fontSize: 18),
                 textAlign: TextAlign.center,
               ),
@@ -388,7 +388,7 @@ class _DrugsCardState extends State<DrugsCard> {
             filteredNameAndValueList = nameAndValueList
                 .where(
                   (oneNameAndValue) =>
-                      oneNameAndValue.name.toLowerCase().contains(
+                      oneNameAndValue.name!.toLowerCase().contains(
                             filteredText.toLowerCase(),
                           ),
                 )
@@ -403,9 +403,9 @@ class _DrugsCardState extends State<DrugsCard> {
     setState(() {
       names = widget.names;
       values = widget.values;
-      for (var i = 0; i < names.length; ++i) {
+      for (var i = 0; i < names!.length; ++i) {
         nameAndValueList
-            .add(NameAndValue(index: i, name: names[i], value: values[i]));
+            .add(NameAndValue(index: i, name: names![i], value: values![i]));
       }
       nameAndValueList.toList();
       filteredNameAndValueList = nameAndValueList;

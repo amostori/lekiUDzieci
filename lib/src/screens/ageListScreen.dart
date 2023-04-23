@@ -12,8 +12,8 @@ class AgeListScreen extends StatefulWidget {
 }
 
 class _AgeListScreenState extends State<AgeListScreen> {
-  List<Age> ages = List();
-  List<Age> agesAfterSearch = List();
+  List<Age> ages = [];
+  List<Age> agesAfterSearch = [];
 
   @override
   void initState() {
@@ -48,7 +48,7 @@ class _AgeListScreenState extends State<AgeListScreen> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextField(
-        keyboardType: TextInputType.number,
+        keyboardType: TextInputType.text,
         decoration: InputDecoration(
           hintText: 'Przeszukaj...',
         ),
@@ -56,7 +56,7 @@ class _AgeListScreenState extends State<AgeListScreen> {
           setState(() {
             agesAfterSearch = ages
                 .where(
-                  (age) => age.title.toLowerCase().contains(
+                  (age) => age.title!.toLowerCase().contains(
                         filteredText.toLowerCase(),
                       ),
                 )

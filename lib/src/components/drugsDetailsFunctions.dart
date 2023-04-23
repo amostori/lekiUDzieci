@@ -1,4 +1,4 @@
-String setDzialanie(String drugName) {
+String setDzialanie(String? drugName) {
   switch (drugName) {
     case 'Adenozyna':
       return 'Czasowo blokuje przewodzenie w węźle AV przerywając '
@@ -74,7 +74,7 @@ String setDzialanie(String drugName) {
   return 'error';
 }
 
-String setWskazania(String drugName) {
+String setWskazania(String? drugName) {
   switch (drugName) {
     case 'Adenozyna':
       return 'Częstoskurcz nadkomorowy typu AVRT i AVNRT (miarowy, z '
@@ -154,7 +154,7 @@ String setWskazania(String drugName) {
   return 'error';
 }
 
-String setPrzeciwwskazania(String drugName) {
+String setPrzeciwwskazania(String? drugName) {
   switch (drugName) {
     case 'Adenozyna':
       return 'Astma oskrzelowa, POChP, zespół wydłużonego odstępu QT, '
@@ -231,7 +231,7 @@ String setPrzeciwwskazania(String drugName) {
   return 'error';
 }
 
-String setCiaza(String drugName) {
+String setCiaza(String? drugName) {
   switch (drugName) {
     case 'Adenozyna':
       return 'Można stosować w ciąży i w czasie karmienia wyłącznie w '
@@ -322,7 +322,7 @@ String setCiaza(String drugName) {
   return 'error';
 }
 
-String setPostac(String drugName) {
+String setPostac(String? drugName) {
   switch (drugName) {
     case 'Adenozyna':
       return 'Ampułka: 6 mg w 2 ml (3 mg/ml)';
@@ -379,7 +379,7 @@ String setPostac(String drugName) {
   return 'error';
 }
 
-String setDawkowanie(String drugName) {
+String setDawkowanie(String? drugName) {
   switch (drugName) {
     case 'Adenozyna':
       return 'Dorośli: 6 mg iv w szybkim bolusie. Można powtórzyć '
@@ -509,12 +509,12 @@ String setDawkowanie(String drugName) {
           'ciśnienie tętnicze.\n\n Przy podawaniu i.m lub s.c dawka to 0,5 mg'
           '.';
     case 'NaCl 0,9%':
-      return '20 ml/kg\n\nmożna raz powtórzyć.';
+      return '10 ml/kg\n\nmożna powtórzyć.';
   }
   return 'error';
 }
 
-String setDzialanieNiepozodane(String drugName) {
+String setDzialanieNiepozodane(String? drugName) {
   switch (drugName) {
     case 'Adenozyna':
       return 'Nudności, wymioty, zawroty głowy, zaburzenia widzenia, '
@@ -616,7 +616,7 @@ String setDzialanieNiepozodane(String drugName) {
   return 'error';
 }
 
-String setInneInfo(String drugName) {
+String setInneInfo(String? drugName) {
   switch (drugName) {
     case 'Adenozyna':
       return 'Preparat: adenocor 6 mg/2 ml. Nie zaleca się stosowania '

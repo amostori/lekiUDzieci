@@ -6,28 +6,28 @@ import 'drugListScreen.dart';
 
 class WeightScreen extends StatelessWidget {
   static const String id = 'WeightScreen';
-  String wiekArgs;
-  String titleArgs;
-  String inputWeight;
+  String? wiekArgs;
+  String? titleArgs;
+  late String inputWeight;
   void selectPage(
-      {BuildContext context, String wiek, String title, String weight}) {
+      {BuildContext? context, String? wiek, String? title, required String weight}) {
     try {
       int waga = int.parse(weight);
       if (waga == null || waga == 0) {
-        Navigator.of(context).pop(true);
+        Navigator.of(context!).pop(true);
         /*Navigator.pushReplacementNamed(
           context,
           TabsScreen.id,
         );*/
       } else {
         Navigator.pushReplacementNamed(
-          context,
+          context!,
           DrugListScreen.id,
           arguments: {'wiek': wiek, 'title': title, 'weight': weight},
         );
       }
     } catch (e) {
-      Navigator.of(context).pop(true);
+      Navigator.of(context!).pop(true);
       return;
     }
   }
@@ -35,7 +35,7 @@ class WeightScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final routeArgs =
-        ModalRoute.of(context).settings.arguments as Map<String, String>;
+        ModalRoute.of(context)!.settings.arguments as Map<String, String?>;
     wiekArgs = routeArgs['wiek'];
     titleArgs = routeArgs['title'];
     inputWeight = '0';

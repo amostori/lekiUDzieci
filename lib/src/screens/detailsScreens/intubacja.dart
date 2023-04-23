@@ -69,7 +69,7 @@ class IntubacjaScreen extends StatelessWidget {
                     'Noworodek: rurka 3.0 na 9 cm\n\n1 - 6 mies.: rurka 3.5'
                     ' na 10 cm\n\n6 - 18 mies.: rurka 4.0 na 11 cm\n\n1,5'
                     ' - 2 lat: rurka 4.5 na 12 cm\n\n3 - 4 lat: rurka 5.0'
-                    ' na 14 cm\n\n5 - 6 lat: rurka 4.5 na 16 cm\n\n7 - 8'
+                    ' na 14 cm\n\n5 - 6 lat: rurka 5.5 na 16 cm\n\n7 - 8'
                     ' lat: rurka 6.0 na 18 cm\n\n9 lat: rurka 6.0 z '
                     'mankietem na 18 cm\n\n10 - 11 lat: rurka 6.5 z mank. '
                     'na 20 cm\n\n>12 lat: rurka 7.0 z mank. na 22 cm',

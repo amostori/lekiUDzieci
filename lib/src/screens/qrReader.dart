@@ -4,7 +4,7 @@ import 'dart:async';
 
 class QrReader extends StatefulWidget {
   static final String id = 'QrReader';
-  final Future<String> tekst;
+  final Future<String>? tekst;
   QrReader({this.tekst});
 
   @override
@@ -12,7 +12,7 @@ class QrReader extends StatefulWidget {
 }
 
 class _QrReaderState extends State<QrReader> {
-  Future<String> _barcodeString;
+  Future<String>? _barcodeString;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class _QrReaderState extends State<QrReader> {
             builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
               return Text(
                 snapshot.data != null
-                    ? snapshot.data
+                    ? snapshot.data!
                     : 'co '
                         'jest',
                 style: TextStyle(color: Colors.black),

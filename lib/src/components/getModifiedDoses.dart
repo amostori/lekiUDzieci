@@ -1269,39 +1269,73 @@ String getHydrokortyzon(int waga) {
   return '200 mg i.v.';
 }
 
+// String getIbuprofen(int waga) {
+//   if (waga < 7) {
+//     return 'Nie stosuje się u dzieci poniżej 7 kilogramów.';
+//   } else if (waga > 6 && waga < 9) {
+//     return '40 mg p.o. lub 60 mg p.r.';
+//   } else if (waga > 8 && waga < 10) {
+//     return '45 mg p.o. lub 60 mg p.r.';
+//   } else if (waga > 9 && waga < 11) {
+//     return '50 mg p.o. lub 60 mg p.r.';
+//   } else if (waga > 10 && waga < 12) {
+//     return '55 mg p.o. lub 60 mg p.r.';
+//   } else if (waga > 11 && waga < 14) {
+//     return '60 mg p.o lub p.r.';
+//   } else if (waga > 13 && waga < 16) {
+//     return '70 mg p.o. lub 125 mg p.r.';
+//   } else if (waga > 15 && waga < 18) {
+//     return '80 mg p.o. lub 125 mg p.r.';
+//   } else if (waga > 17 && waga < 20) {
+//     return '90 mg p.o lub 125 mg p.r.';
+//   } else if (waga > 19 && waga < 22) {
+//     return '100 mg p.o. lub 125 mg p.r.';
+//   } else if (waga > 21 && waga < 25) {
+//     return '110 mg p.o. lub 125 mg p.r.';
+//   } else if (waga > 24 && waga < 28) {
+//     return '125 mg p.o. lub p.r.';
+//   } else if (waga > 27 && waga > 33) {
+//     return '140 mg p.o. lub 125 mg p.r.';
+//   } else if (waga > 32 && waga < 36) {
+//     return '165 mg p.o. lub 125 mg p.r.';
+//   } else if (waga > 35 && waga < 40) {
+//     return '180 mg p.o. lub 125 mg p.r.';
+//   }
+//   return '200 mg p.o. lub 125 mg p.r.';
+// }
 String getIbuprofen(int waga) {
   if (waga < 7) {
     return 'Nie stosuje się u dzieci poniżej 7 kilogramów.';
   } else if (waga > 6 && waga < 9) {
-    return '40 mg p.o. lub 60 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 60 mg p.r.';
   } else if (waga > 8 && waga < 10) {
-    return '45 mg p.o. lub 60 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 60 mg p.r.';
   } else if (waga > 9 && waga < 11) {
-    return '50 mg p.o. lub 60 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 60 mg p.r.';
   } else if (waga > 10 && waga < 12) {
-    return '55 mg p.o. lub 60 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 60 mg p.r.';
   } else if (waga > 11 && waga < 14) {
-    return '60 mg p.o lub p.r.';
+    return '${waga*5} - ${waga*10} mg p.o lub 60 p.r.';
   } else if (waga > 13 && waga < 16) {
-    return '70 mg p.o. lub 125 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 125 mg p.r.';
   } else if (waga > 15 && waga < 18) {
-    return '80 mg p.o. lub 125 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 125 mg p.r.';
   } else if (waga > 17 && waga < 20) {
-    return '90 mg p.o lub 125 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o lub 125 mg p.r.';
   } else if (waga > 19 && waga < 22) {
-    return '100 mg p.o. lub 125 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 125 mg p.r.';
   } else if (waga > 21 && waga < 25) {
-    return '110 mg p.o. lub 125 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 125 mg p.r.';
   } else if (waga > 24 && waga < 28) {
-    return '125 mg p.o. lub p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 125 p.r.';
   } else if (waga > 27 && waga > 33) {
-    return '140 mg p.o. lub 125 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 125 mg p.r.';
   } else if (waga > 32 && waga < 36) {
-    return '165 mg p.o. lub 125 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 125 mg p.r.';
   } else if (waga > 35 && waga < 40) {
-    return '180 mg p.o. lub 125 mg p.r.';
+    return '${waga*5} - ${waga*10} mg p.o. lub 125 mg p.r.';
   }
-  return '200 mg p.o. lub 125 mg p.r.';
+  return '${waga*5} - ${waga*10} mg p.o. lub 125 mg p.r.';
 }
 
 String getKetonal() {
@@ -1420,10 +1454,6 @@ String getSalbutamol(int waga) {
 
 String getWlew(int waga) {
   String razy10 = (waga * 10).toString();
-  String razy20 = (waga * 20).toString();
+  return 'Podaj $razy10 ml we wlewie. \n\nW razie potrzeby można powtórzyć.';
 
-  if (waga < 5) {
-    return 'Podaj $razy10 ml we wlewie. \n\nW razie potrzeby można powtórzyć.';
-  }
-  return 'Podaj $razy20 ml we wlewie.\n\nW razie potrzeby można powtórzyć.';
 }

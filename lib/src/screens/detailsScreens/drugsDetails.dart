@@ -8,8 +8,8 @@ class DrugDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final routeArgs =
-        ModalRoute.of(context).settings.arguments as Map<String, String>;
-    String drugName = routeArgs['drugName'];
+        ModalRoute.of(context)!.settings.arguments as Map<String, String>;
+    String? drugName = routeArgs['drugName'];
     return Scaffold(
       body: NestedScrollView(
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
@@ -20,7 +20,7 @@ class DrugDetailsScreen extends StatelessWidget {
               pinned: true,
               flexibleSpace: FlexibleSpaceBar(
                 centerTitle: true,
-                title: Text(drugName,
+                title: Text(drugName!,
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16.0,

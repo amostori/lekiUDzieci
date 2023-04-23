@@ -15,7 +15,7 @@ class DrugListScreen extends StatefulWidget {
 }
 
 class _DrugListScreenState extends State<DrugListScreen> {
-  void changeWeight({BuildContext context, String wiek, String title}) async {
+  void changeWeight({required BuildContext context, String? wiek, String? title}) async {
     Navigator.pushNamed(context, WeightScreen.id,
         arguments: {'wiek': wiek, 'title': title});
   }
@@ -23,16 +23,16 @@ class _DrugListScreenState extends State<DrugListScreen> {
   @override
   Widget build(BuildContext context) {
     final routeArgs =
-        ModalRoute.of(context).settings.arguments as Map<String, String>;
+        ModalRoute.of(context)!.settings.arguments as Map<String, String?>;
 
-    String title = routeArgs['title'];
-    String wiek = routeArgs['wiek'];
-    String waga = routeArgs['waga'];
-    String weight = routeArgs['weight'];
-    List<String> setDoses() {
+    String? title = routeArgs['title'];
+    String? wiek = routeArgs['wiek'];
+    String? waga = routeArgs['waga'];
+    String? weight = routeArgs['weight'];
+    List<String>? setDoses() {
       //
-      if (int.parse(weight) < 1) {
-        switch (int.parse(wiek)) {
+      if (int.parse(weight!) < 1) {
+        switch (int.parse(wiek!)) {
           case 1:
             return getNewBornList(3);
           case 2:
@@ -87,8 +87,8 @@ class _DrugListScreenState extends State<DrugListScreen> {
             return get12Plusyears(41);
         }
       } else {
-        int weight = int.parse(routeArgs['weight']);
-        switch (int.parse(wiek)) {
+        int weight = int.parse(routeArgs['weight']!);
+        switch (int.parse(wiek!)) {
           case 1:
             return getNewBornListModified(weight);
           case 2:
@@ -152,7 +152,7 @@ class _DrugListScreenState extends State<DrugListScreen> {
         title: Text('Wiek $title, $wagaAppBar'),
         actions: <Widget>[
           IconButton(
-            icon: Icon(FontAwesomeIcons.weight),
+            icon: Icon(FontAwesomeIcons.weightScale),
             onPressed: () =>
                 changeWeight(context: context, wiek: wiek, title: title),
           ),

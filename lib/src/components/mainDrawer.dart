@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_email_sender/flutter_email_sender.dart';
 import '../screens/about.dart';
 import '../screens/tips/big.dart';
 import '../screens/tips/defibrilation.dart';
@@ -12,22 +11,6 @@ import '../screens/tips/wklucie.dart';
 
 class MainDrawer extends StatelessWidget {
   final String version = '9.0';
-
-  Future<void> sendEmail() async {
-    final Email email = Email(
-      subject: 'Leki u dzieci $version',
-      recipients: ['amostori@op.pl'],
-    );
-    String platformResponse;
-
-    try {
-      await FlutterEmailSender.send(email);
-      platformResponse = 'success';
-    } catch (error) {
-      platformResponse = error.toString();
-    }
-    print('email platformResponse = $platformResponse');
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +29,6 @@ class MainDrawer extends StatelessWidget {
             ),
             accountName: Text('Leki u dzieci $version'),
             accountEmail: Text('amostori@op.pl'),
-            onDetailsPressed: sendEmail,
             currentAccountPicture: Image(
               image: AssetImage('images/ramiona.jpg'),
               fit: BoxFit.scaleDown,

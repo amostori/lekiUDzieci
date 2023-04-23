@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class Age {
-  final String id;
+  final String? id;
   final Color color;
-  final String title;
-  final String wiek;
-  final String waga;
+  final String? title;
+  final String? wiek;
+  final String? waga;
 
   const Age({
     this.wiek,
