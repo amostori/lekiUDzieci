@@ -13,7 +13,7 @@ class WeightScreen extends StatelessWidget {
       {BuildContext? context, String? wiek, String? title, required String weight}) {
     try {
       int waga = int.parse(weight);
-      if (waga == null || waga == 0) {
+      if (waga == 0) {
         Navigator.of(context!).pop(true);
         /*Navigator.pushReplacementNamed(
           context,

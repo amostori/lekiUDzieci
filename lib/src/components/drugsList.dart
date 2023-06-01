@@ -4,6 +4,7 @@ List<String> drugsList = [
   'Prawidłowy oddech',
   'Prawidłowe tętno',
   'Poziom glukozy',
+  'Maska twarzowa',
   'Rurka intubacyjna',
   'Laryngoskop',
   'Maska krtaniowa',

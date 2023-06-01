@@ -2,6 +2,7 @@
 // flutter build appbundle
 // µ
 // ctrl + shift + alt + j - zaznacz wszystkie podobne
+import 'package:and/src/screens/detailsScreens/maska_twarzowa.dart';
 import 'package:flutter/material.dart';
 
 import 'src/screens/about.dart';
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
       title: 'Leki u dzieci',
       theme: ThemeData(
         primarySwatch: Colors.red,
-        accentColor: Colors.amber,
+        hintColor: Colors.amber,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
@@ -79,6 +80,7 @@ class MyApp extends StatelessWidget {
         IntubacjaScreen.id: (context) => IntubacjaScreen(),
         BladeScreen.id: (context) => BladeScreen(),
         MaskaScreen.id: (context) => MaskaScreen(),
+        MaskaTwarzowaScreen.id:(context)=>MaskaTwarzowaScreen(),
         KardioversionScreen.id: (context) => KardioversionScreen(),
         DrugDetailsScreen.id: (context) => DrugDetailsScreen(),
         AgeListScreen.id: (context) => AgeListScreen(),

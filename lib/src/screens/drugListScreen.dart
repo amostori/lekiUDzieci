@@ -28,10 +28,10 @@ class _DrugListScreenState extends State<DrugListScreen> {
     String? title = routeArgs['title'];
     String? wiek = routeArgs['wiek'];
     String? waga = routeArgs['waga'];
-    String? weight = routeArgs['weight'];
+    String? weightAfterChange = routeArgs['weight'];
     List<String>? setDoses() {
       //
-      if (int.parse(weight!) < 1) {
+      if (int.parse(weightAfterChange!) < 1) {
         switch (int.parse(wiek!)) {
           case 1:
             return getNewBornList(3);
@@ -146,7 +146,7 @@ class _DrugListScreenState extends State<DrugListScreen> {
       return null;
     }
 
-    String wagaAppBar = waga == null ? '$weight kg' : waga;
+    String wagaAppBar = waga == null ? '$weightAfterChange kg' : waga;
     return Scaffold(
       appBar: AppBar(
         title: Text('Wiek $title, $wagaAppBar'),

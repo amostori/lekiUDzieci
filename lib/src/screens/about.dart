@@ -39,7 +39,8 @@ class AboutScreen extends StatelessWidget {
                   children: <Widget>[
                     kImageSizedBox,
                     Text(
-                      'Przyczyną powstania aplikacji "Leki u dzieci" były'
+                      'Wersja: 9.4.0\n\nPrzyczyną powstania aplikacji "Leki u '
+                          'dzieci" były'
                       ' kłopoty z pamięcią jej autora, ratownika '
                       'medycznego z zacięciem informatycznym :) \n\nOd tamtej '
                       'pory wielokrotnie zmieniana, uzupełniana, '

@@ -1,3 +1,4 @@
+import 'package:and/src/screens/detailsScreens/maska_twarzowa.dart';
 import 'package:flutter/material.dart';
 import '../screens/detailsScreens/blade.dart';
 import '../screens/detailsScreens/breathing.dart';
@@ -54,36 +55,30 @@ class _DrugsCardState extends State<DrugsCard> {
       case 4:
         Navigator.pushNamed(context!, GlukozeScreen.id);
         break;
-      case 5:
-        Navigator.pushNamed(context!, IntubacjaScreen.id);
+        case 5:
+        Navigator.pushNamed(context!, MaskaTwarzowaScreen.id);
         break;
       case 6:
-        Navigator.pushNamed(context!, BladeScreen.id);
+        Navigator.pushNamed(context!, IntubacjaScreen.id);
         break;
       case 7:
-        Navigator.pushNamed(context!, MaskaScreen.id);
+        Navigator.pushNamed(context!, BladeScreen.id);
         break;
       case 8:
-        Navigator.pushNamed(context!, Defibrilation.id);
+        Navigator.pushNamed(context!, MaskaScreen.id);
         break;
       case 9:
-        Navigator.pushNamed(context!, KardioversionScreen.id);
+        Navigator.pushNamed(context!, Defibrilation.id);
         break;
       case 10:
-        Navigator.pushNamed(
-          context!,
-          DrugDetailsScreen.id,
-          arguments: {
-            'drugName': 'Adenozyna',
-          },
-        );
+        Navigator.pushNamed(context!, KardioversionScreen.id);
         break;
       case 11:
         Navigator.pushNamed(
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Adrenalina',
+            'drugName': 'Adenozyna',
           },
         );
         break;
@@ -110,7 +105,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Amiodaron',
+            'drugName': 'Adrenalina',
           },
         );
         break;
@@ -119,7 +114,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Atropina',
+            'drugName': 'Amiodaron',
           },
         );
         break;
@@ -128,7 +123,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Deksametazon',
+            'drugName': 'Atropina',
           },
         );
         break;
@@ -137,7 +132,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Fentanyl',
+            'drugName': 'Deksametazon',
           },
         );
         break;
@@ -146,7 +141,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Furosemid',
+            'drugName': 'Fentanyl',
           },
         );
         break;
@@ -155,7 +150,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Glukagon',
+            'drugName': 'Furosemid',
           },
         );
         break;
@@ -164,7 +159,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Glukoza',
+            'drugName': 'Glukagon',
           },
         );
         break;
@@ -173,7 +168,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Hydrokortyzon',
+            'drugName': 'Glukoza',
           },
         );
         break;
@@ -182,7 +177,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Ibuprofen',
+            'drugName': 'Hydrokortyzon',
           },
         );
         break;
@@ -191,7 +186,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Ketonal',
+            'drugName': 'Ibuprofen',
           },
         );
         break;
@@ -200,7 +195,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Klemastin',
+            'drugName': 'Ketonal',
           },
         );
         break;
@@ -209,7 +204,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Klonazepam',
+            'drugName': 'Klemastin',
           },
         );
         break;
@@ -218,7 +213,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Magnez',
+            'drugName': 'Klonazepam',
           },
         );
         break;
@@ -227,7 +222,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Midazolam',
+            'drugName': 'Magnez',
           },
         );
         break;
@@ -236,7 +231,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Morfina',
+            'drugName': 'Midazolam',
           },
         );
         break;
@@ -245,7 +240,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'NaHCO3',
+            'drugName': 'Morfina',
           },
         );
         break;
@@ -254,7 +249,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Nalokson',
+            'drugName': 'NaHCO3',
           },
         );
         break;
@@ -263,7 +258,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Paracetamol',
+            'drugName': 'Nalokson',
           },
         );
         break;
@@ -281,7 +276,7 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Relanium - Diazepam',
+            'drugName': 'Paracetamol',
           },
         );
         break;
@@ -299,11 +294,20 @@ class _DrugsCardState extends State<DrugsCard> {
           context!,
           DrugDetailsScreen.id,
           arguments: {
-            'drugName': 'Salbutamol',
+            'drugName': 'Relanium - Diazepam',
           },
         );
         break;
       case 36:
+        Navigator.pushNamed(
+          context!,
+          DrugDetailsScreen.id,
+          arguments: {
+            'drugName': 'Salbutamol',
+          },
+        );
+        break;
+      case 37:
         Navigator.pushNamed(
           context!,
           DrugDetailsScreen.id,
@@ -363,7 +367,6 @@ class _DrugsCardState extends State<DrugsCard> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     setNamesAndValue();
   }
