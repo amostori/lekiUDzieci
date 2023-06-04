@@ -48,7 +48,7 @@ class _AgeListScreenState extends State<AgeListScreen> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextField(
-        keyboardType: TextInputType.text,
+        keyboardType: TextInputType.number,
         decoration: InputDecoration(
           hintText: 'Przeszukaj...',
         ),

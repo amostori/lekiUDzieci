@@ -10,15 +10,15 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		nX2+Nf6iapGjb2/yWuJqwo28jF0=
+		RABqF3+cFJPQyoIFjboAM9iH6n0=
 		</data>
 		<key>flutter_assets/AssetManifest.smcbin</key>
 		<data>
-		zEZfe/GOhLSA7l69sU8tlN6k/xQ=
+		D/ixhB0HcpdYpec7EtXXL4HucDA=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
-		mOXZPW/CHT9UFy/oe67Nme8qnro=
+		elAXWW11I6vO5RhXl8hzZaXDFhI=
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
@@ -55,6 +55,26 @@
 		<key>flutter_assets/assets/fonts/RobotoCondensed-Regular.ttf</key>
 		<data>
 		I1I/vR5seTvk88YyOzKdL7sBx98=
+		</data>
+		<key>flutter_assets/assets/fonts/montserrat/Montserrat-Bold.ttf</key>
+		<data>
+		MyD/VRSzJWWwOW3k8gZM4X7J7qQ=
+		</data>
+		<key>flutter_assets/assets/fonts/montserrat/Montserrat-Light.ttf</key>
+		<data>
+		COUQE3Bko8mFm3HP9bmZ/ow1Hmc=
+		</data>
+		<key>flutter_assets/assets/fonts/montserrat/Montserrat-Medium.ttf</key>
+		<data>
+		ykL+EPqJPzkEcoWUBcdWQJXkJg8=
+		</data>
+		<key>flutter_assets/assets/fonts/montserrat/Montserrat-Regular.ttf</key>
+		<data>
+		/x6102CkLAxnXY7Pypo+W3CdMCo=
+		</data>
+		<key>flutter_assets/assets/fonts/montserrat/Montserrat-SemiBold.ttf</key>
+		<data>
+		TvKakWO1bfNKNIa5iyS+Oj0M3KY=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -290,7 +310,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		BO6eN1aW7F1qCB99UdVw+eMBMks=
+		8hj5ZyEN1JscdeBBd7pc/19hIc8=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -323,21 +343,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pM4HjTAbh0b8OTkfkp5PnIvgJcQJwEeq1PPNCzGd1g0=
+			rlrGG/t1D92QTJsgQogesumF0/VxYHLrD15HSdHtidI=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.smcbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L7N1wnbXGaziN7g/RNyFMaEtMQJiTIDaDJPV1hKRowQ=
+			hR71FQqqv8GGd5XdQ17lb/ZLvQStqy+JcMhtgb+gbJI=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wk1bCD2hwUIgaJAV5yNziw0rtbtpBNeISheMU60/lz4=
+			Cq/k1hW5eU7Zor9A7V57TiGRB8nrGcbAOy9+rcbk/Yc=
 			</data>
 		</dict>
 		<key>flutter_assets/NOTICES.Z</key>
@@ -394,6 +414,41 @@
 			<key>hash2</key>
 			<data>
 			B3OU3mStMOZL4Q7WRkp8KBQn3sLCLjCABD94wiEzO/4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/fonts/montserrat/Montserrat-Bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xMjLVypaLEPXizcB9LI0loTmyk0VV+Rpr2BlseCZwmw=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/fonts/montserrat/Montserrat-Light.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m4eSXQYbGv+2ZBdxdzGteB99dnj7CJtJ8UvZIsIzhVk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/fonts/montserrat/Montserrat-Medium.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			krPTxuE16x3JX4jmynW9YRPZ6zJhqVyjn3M+OJflNnU=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/fonts/montserrat/Montserrat-Regular.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gevDkWtSQAe3VtkdnfE8dnPsQBFh8srRYWYtCNzxzHI=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/fonts/montserrat/Montserrat-SemiBold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			urWD040QXayRQbKH+yt3Y7bYsLrpfnRfqszttApXnCk=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -806,7 +861,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T2UF4Q7gq0GXVf0tEKMjMm00H3bAI0gSpM7rchq/8ZE=
+			RvqXHFbFMon7D2YR9fmtmBN860FNWkJ0p4R3ervLsdw=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

@@ -1,7 +1,7 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="org.marcin.and"
-4    android:versionCode="4094"
+4    android:versionCode="94"
 5    android:versionName="9.4.0" >
 6
 7    <uses-sdk

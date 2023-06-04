@@ -8,43 +8,12 @@
   "variantName": "release",
   "elements": [
     {
-      "type": "ONE_OF_MANY",
-      "filters": [
-        {
-          "filterType": "ABI",
-          "value": "x86_64"
-        }
-      ],
+      "type": "SINGLE",
+      "filters": [],
       "attributes": [],
-      "versionCode": 4094,
+      "versionCode": 94,
       "versionName": "9.4.0",
-      "outputFile": "resources-x86_64Release.ap_"
-    },
-    {
-      "type": "ONE_OF_MANY",
-      "filters": [
-        {
-          "filterType": "ABI",
-          "value": "arm64-v8a"
-        }
-      ],
-      "attributes": [],
-      "versionCode": 2094,
-      "versionName": "9.4.0",
-      "outputFile": "resources-arm64-v8aRelease.ap_"
-    },
-    {
-      "type": "ONE_OF_MANY",
-      "filters": [
-        {
-          "filterType": "ABI",
-          "value": "armeabi-v7a"
-        }
-      ],
-      "attributes": [],
-      "versionCode": 1094,
-      "versionName": "9.4.0",
-      "outputFile": "resources-armeabi-v7aRelease.ap_"
+      "outputFile": "resources-release.ap_"
     }
   ],
   "elementType": "File"

@@ -2,6 +2,7 @@
 // flutter build appbundle
 // µ
 // ctrl + shift + alt + j - zaznacz wszystkie podobne
+// open ios/Runner.xcworkspace
 import 'package:and/src/screens/detailsScreens/maska_twarzowa.dart';
 import 'package:flutter/material.dart';
 
@@ -41,19 +42,20 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         hintColor: Colors.amber,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
-        fontFamily: 'Raleway',
+        fontFamily: 'Montserrat',
+        inputDecorationTheme: const InputDecorationTheme()
+            .copyWith(hintStyle: TextStyle(color: Colors.black26)),
         textTheme: ThemeData.light().textTheme.copyWith(
-              bodyText1: TextStyle(
+              bodyLarge: TextStyle(
                 color: Color.fromRGBO(20, 51, 51, 1),
                 fontSize: 18,
               ),
-              bodyText2: TextStyle(
+              bodyMedium: TextStyle(
                 fontSize: 18,
                 color: Color.fromRGBO(20, 51, 51, 1),
               ),
-              headline6: TextStyle(
+              titleLarge: TextStyle(
                 fontSize: 18,
-                fontFamily: 'RobotoCondensed',
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -80,7 +82,7 @@ class MyApp extends StatelessWidget {
         IntubacjaScreen.id: (context) => IntubacjaScreen(),
         BladeScreen.id: (context) => BladeScreen(),
         MaskaScreen.id: (context) => MaskaScreen(),
-        MaskaTwarzowaScreen.id:(context)=>MaskaTwarzowaScreen(),
+        MaskaTwarzowaScreen.id: (context) => MaskaTwarzowaScreen(),
         KardioversionScreen.id: (context) => KardioversionScreen(),
         DrugDetailsScreen.id: (context) => DrugDetailsScreen(),
         AgeListScreen.id: (context) => AgeListScreen(),

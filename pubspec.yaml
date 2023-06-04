@@ -24,19 +24,16 @@ flutter:
     - images/
 
   fonts:
-    - family: Raleway
+    - family: Montserrat
       fonts:
-        - asset: assets/fonts/Raleway-Regular.ttf
-        - asset: assets/fonts/Raleway-Bold.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Raleway-Black.ttf
-          weight: 900
-    - family: RobotoCondensed
-      fonts:
-        - asset: assets/fonts/RobotoCondensed-Regular.ttf
-        - asset: assets/fonts/RobotoCondensed-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/RobotoCondensed-Light.ttf
+        - asset: assets/fonts/montserrat/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/montserrat/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/montserrat/Montserrat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/montserrat/Montserrat-Light.ttf
           weight: 300
-        - asset: assets/fonts/RobotoCondensed-Italic.ttf
-          style: italic
+
