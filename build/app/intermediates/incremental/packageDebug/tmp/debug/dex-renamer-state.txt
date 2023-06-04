@@ -1,4 +1,0 @@
-#Fri Apr 21 07:20:40 CEST 2023
-base.0=/Users/marcinandrzejczak/StudioProjects/lekiUDzieci/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
