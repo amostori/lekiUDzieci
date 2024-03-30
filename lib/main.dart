@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Leki u dzieci',
       theme: ThemeData(
+        useMaterial3: false,
         primarySwatch: Colors.red,
         hintColor: Colors.amber,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
